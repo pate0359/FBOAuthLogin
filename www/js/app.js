@@ -74,7 +74,7 @@ angular.module('starter', ['ionic','satellizer','starter.controllers'])
 	$authProvider.facebook({
       clientId: '109332899147726',
       responseType: 'token',
-		scope: ['email']
+		
     });
 	
 });

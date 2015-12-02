@@ -34,7 +34,9 @@ angular.module('starter.controllers', [])
         .then(function(response) {
 		  var token = response.access_token;
 		  console.log('access token - '+token);
-		  console.log('Response - '+JSON.stringify(response));
+		  console.log('Response - '+JSON.stringify(response.data.user));
+		  console.log('Response - '+$auth.getPayload.toString());
+		  
         })
         .catch(function(response) {
 		  console.log("EROOR");
